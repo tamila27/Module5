@@ -12,12 +12,13 @@ public class Runner {
         int elementsCount = scanner.nextInt();
 
         int[] array = ArrayFactory.getRandomIntArray(elementsCount);
-
-        System.out.println("Array = " + Arrays.toString(array));
-        System.out.println("min value = " + ArrayUtility.getMinInArray(array));
-        System.out.println("max value = " + ArrayUtility.getMaxInArray(array));
-        ArrayUtility.quickSort(array, 0, array.length-1);
-        System.out.println("Sorted array = " + Arrays.toString(array));
+        if(array != null){
+            System.out.println("Array = " + Arrays.toString(array));
+            System.out.println("min value = " + ArrayUtility.getMinInArray(array));
+            System.out.println("max value = " + ArrayUtility.getMaxInArray(array));
+            ArrayUtility.quickSort(array, 0, array.length-1);
+            System.out.println("Sorted array = " + Arrays.toString(array));
+        }
     }
 
 
